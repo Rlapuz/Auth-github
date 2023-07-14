@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen -mt-16">
-      <h1 className="text-black">Login to get started</h1>
+      <h1 className="text-black font-medium">Login to get started</h1>
       <LoginButton />
     </div>
   );
