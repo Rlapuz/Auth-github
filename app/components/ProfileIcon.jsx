@@ -21,5 +21,11 @@ export default function ProfileIcon() {
     );
   }
 
-  return <button onClick={() => signIn("github")}>Sign In</button>;
+  return (
+    <button
+      onClick={() => signIn("github")}
+      className="text-black">
+      Sign In
+    </button>
+  );
 }
