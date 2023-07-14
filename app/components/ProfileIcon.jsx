@@ -8,7 +8,7 @@ export default function ProfileIcon() {
 
   if (status === "authenticated") {
     return (
-      <div className="flex gap-5">
+      <div className="flex gap-5 text-black">
         <Image
           src={session.user.image}
           width={40}
@@ -21,11 +21,5 @@ export default function ProfileIcon() {
     );
   }
 
-  return (
-    <button
-      onClick={() => signIn("github")}
-      className="text-black">
-      Sign In
-    </button>
-  );
+  return <button onClick={() => signIn("github")}>Sign In</button>;
 }
