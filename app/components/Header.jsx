@@ -8,7 +8,7 @@ export default function Header() {
 
   if (status === "authenticated") {
     return (
-      <div className="flex flex-col items-center justify-center h-screen -mt-16">
+      <div className="flex flex-col items-center justify-center h-screen -mt-16 text-black ">
         <h1>Welcome,</h1>
         <span className="font-bold text-2xl">{session.user.name}</span>
       </div>
